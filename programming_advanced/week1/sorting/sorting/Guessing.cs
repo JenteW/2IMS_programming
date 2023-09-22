@@ -9,9 +9,12 @@ namespace sorting
 {
     internal class Guessing
     {
+        public int Guesses { get; set; }
         public int Linear(int[] array, int number)
         {
+            Guesses = 0;
             for (int i = 0; i < array.Length; i++) {
+                Guesses++;
                 if (array[i] == number)
                 { return i; }
             }
@@ -20,10 +23,13 @@ namespace sorting
 
         public int Stupid(int[] array, int number)
         {
+            Guesses = 0;
+
             List<int> guessed  = new List<int>();
             Random random = new Random();
             do
             {
+                Guesses++;
                 int position = random.Next(0, array.Length);
                 if (array[position] == number)
                 {
@@ -38,10 +44,13 @@ namespace sorting
             return -1;
         }
         public int Binary(int[] array, int number) {
+            Guesses = 0;
+
             int low = 0;
             int high = array.Length - 1;
             while(low <= high)
             {
+                Guesses++;
                 int mid = (low + high)  / 2;
                 if (array[mid] == number) { return mid; }
                 else if (array[mid] > number)
@@ -58,39 +67,8 @@ namespace sorting
         
         }
 
+        //big O, hoeveel operaties nodig zijn om een opdracht te voltooien
+        //ALTIJD LOG2 cus AAN OF UIT (BINAIR)
 
-        public int Smort(int[] array, int number) {
-
-            int mid = Math.Abs(array.Length / 2);
-            int[] half;
-            while (array[mid] != number)
-            {
-                if (array[mid] < number)
-                {
-                    half = new int[mid];
-                    for (int i = mid + 1; i < half.Length; i++)
-                    {
-                        half.Append(array[i]);
-                    }
-                    mid = half.Length / 2;
-                }
-                else if (array[mid] > number)
-                {
-                    half = new int[array.Length / 2];
-                    for (int i = mid - 1; i > 0; i--)
-                    {
-                        half.Append(array[i]);
-
-                    }
-                    mid = half.Length / 2;
-                }
-                else if (array[mid] == number)
-                {
-                    return mid;
-                }
-              
-            }
-            return -1;
-        }
     }
 }
