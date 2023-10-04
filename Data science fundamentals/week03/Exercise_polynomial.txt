@@ -1,0 +1,3 @@
+Consider the  "auto-mpg.csv" (https://www.kaggle.com/uciml/autompg-dataset) datafile. Analyze this dataset using polynomial regression.
+Start off by constructing a correlation matrix to check which variables might interact with each other.
+Use both polynomial as linear regression to fit the best possible models, and formulate a prediction.

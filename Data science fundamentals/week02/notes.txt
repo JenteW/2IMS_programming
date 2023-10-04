@@ -1,0 +1,6 @@
+residuals = afstand datapunt en lijn
+OLS ordinary least squares = zie ppt
+Mean Squared Error = hoe accuraat is u model --> squared om grotere fouten harder af te straffen.
+
+
+deel waar ge mee traint, gaat ge nooit mee testen
