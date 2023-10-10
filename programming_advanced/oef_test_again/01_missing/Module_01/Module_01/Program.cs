@@ -12,9 +12,26 @@ namespace Module_01
             int[] array = new int[split.Length];
             for (int i = 0; i < split.Length; i++)
             {
-                array[i] = int.Parse(split[i]);
+                try
+                {
+                    array[i] = int.Parse(split[i]);
+
+                }
+                catch {
+                    Console.WriteLine("Crazy input!");
+                    return;
+                }
+
             }
-            Console.WriteLine($"the missing value is {assignment.Missing(array)}");
+            string anwser = assignment.Missing(array);
+            if (anwser == "-1")
+            {
+                Console.WriteLine("No missing number.");
+            }
+            else
+            {
+                Console.WriteLine(anwser);
+            }
 
         }
     }

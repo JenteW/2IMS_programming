@@ -18,9 +18,11 @@ namespace theNth
         public char findChar(string text, int num)
         {
 
+
             string word = Long(text);
             char c;
-            if(word.Length > num) {
+            if (word.Length > num)
+            {
                 c = word[num];
                 return c;
 
@@ -29,7 +31,6 @@ namespace theNth
             {
                 return '/';
             }
-            
 
         }
     }
