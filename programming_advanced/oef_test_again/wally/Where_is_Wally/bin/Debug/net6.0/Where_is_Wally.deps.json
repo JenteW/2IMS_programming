@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Where_is_Wally/1.0.0": {
+        "runtime": {
+          "Where_is_Wally.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Where_is_Wally/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
