@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Module_02
 {
@@ -21,29 +22,30 @@ namespace Module_02
                 do
                 {
                     next = Console.ReadLine();
-                    list.Add(next);
+                    if (!string.IsNullOrEmpty(next))
+                    {
+                        list.Add(next);
+                    }
 
-                } while (next != "");
-                /*remove last list input*/
+                } while (!string.IsNullOrWhiteSpace(next));
 
-                for (int i = 0; i < list.Count - 1; i++)
+
+                for (int i = 0; i < list.Count; i++)
                 {
                     string[] temp = list[i].Split(' ');
 
                     temp[1] = temp[1].Replace(',', ' ');
                     temp[1] = temp[1].Trim();
-                    Console.WriteLine(temp[1]);
                     number.Add(Convert.ToInt32(temp[1]));
                     temp[3] = temp[3].Replace('"', ' ');
                     temp[3] = temp[3].Trim();
-                    Console.WriteLine(temp[3]);
                     text.Add(temp[3]);
 
                 }
                 for (int i = 0; i < number.Count; i++)
                 {
 
-                    for (int j = 0; j < i; j++)
+                    for (int j = 0; j < number.Count - 1 - i; j++)
                     {
                         if (number[j] > number[j + 1])
                         {
@@ -63,10 +65,17 @@ namespace Module_02
                 string output = "";
 
                 foreach (string s in text) { output += $"{s} "; }
+                if(output.Length > 1)
+                {
+                    return output.Trim();
 
-                return output;
+                }
+                else
+                {
+                    return "Crazy input!";
+                }
             }
-            catch { return "Crazy input"; }
+            catch { return "Crazy input!"; }
         }
     }
 }

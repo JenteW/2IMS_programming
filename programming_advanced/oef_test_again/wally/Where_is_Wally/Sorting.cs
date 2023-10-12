@@ -76,7 +76,6 @@ namespace Where_is_Wally
         {
             int n = names.Length;
 
-            // Start with a large gap and reduce it
             for (int gap = n / 2; gap > 0; gap /= 2)
             {
                 for (int i = gap; i < n; i++)
@@ -84,13 +83,11 @@ namespace Where_is_Wally
                     string temp = names[i];
                     int j;
 
-                    // Move elements of arr[0..i-gap] that are greater than the current element arr[i]
                     for (j = i; j >= gap && string.Compare(names[j - gap], temp) > 0; j -= gap)
                     {
                         names[j] = names[j - gap];
                     }
 
-                    // Insert the current element arr[i] into the correct position
                     names[j] = temp;
                 }
             }
@@ -137,20 +134,20 @@ namespace Where_is_Wally
 
                 if (compareResult == 0)
                 {
-                    return mid; // Target found
+                    return mid;
                 }
 
                 if (compareResult < 0)
                 {
-                    left = mid + 1; // Target is in the right half
+                    left = mid + 1; 
                 }
                 else
                 {
-                    right = mid - 1; // Target is in the left half
+                    right = mid - 1; 
                 }
             }
 
-            return -1; // Target not found
+            return -1;
         }
     }
 }

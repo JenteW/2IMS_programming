@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\02_largest\\Module_02\\Module_02\\Module_02.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\02_largest\\Module_02\\Module_02\\Module_02.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\02_largest\\Module_02\\Module_02\\Module_02.csproj",
+        "projectName": "Module_02",
+        "projectPath": "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\02_largest\\Module_02\\Module_02\\Module_02.csproj",
+        "packagesPath": "C:\\Users\\miste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\02_largest\\Module_02\\Module_02\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\miste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

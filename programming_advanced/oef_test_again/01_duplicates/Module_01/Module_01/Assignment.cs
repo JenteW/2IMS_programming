@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Module_01
 {
@@ -10,53 +11,61 @@ namespace Module_01
     {
         public string Duplicates(string start, string filename)
         {
-            string text = File.ReadAllText(filename);
-            string[] words = text.Split('\n');
-            bool check = true;
-            List<string> result = new List<string>();
-            char[] s = start.ToCharArray();
-            string test = "";
-            foreach (string word in words)
+            try
             {
-                char[] c = word.ToCharArray();
-
-                for (int i = 0; i < start.Length; i++) 
+                string text = File.ReadAllText(filename);
+                string[] words = text.Split('\n');
+                bool check = true;
+                start = start.ToLower();
+                List<string> result = new List<string>();
+                char[] s = start.ToCharArray();
+                string test = "";
+                foreach (string word in words)
                 {
-                    if(c.Length < s.Length)
+                    char[] c = word.ToCharArray();
+
+                    for (int i = 0; i < start.Length; i++)
                     {
-                        check = false;
-                        break;
+                        if (c.Length < s.Length)
+                        {
+                            check = false;
+                            break;
+                        }
+                        if (c[i] != s[i])
+                        {
+                            check = false;
+                            break;
+                        }
+                        else
+                        {
+                            check = true;
+                        }
+
                     }
-                    if (c[i] != s[i])
+                    if (check)
                     {
-                        check = false;
-                        break;
-                    }
-                    else
-                    {
-                        check = true;
+                        if (result.Contains(word))
+                        {
+                            test = test + " " + word;
+                        }
+                        else
+                        {
+                            result.Add(word);
+                        }
                     }
 
                 }
-                if (check)
+                if (test == "")
                 {
-                    if (result.Contains(word))
-                    {
-                        test = test + word + "\n";
-                    }
-                    else
-                    {
-                        result.Add(word);
-                    }
+                    return "No duplicates found.";
                 }
-               
-            }
-            if(test == "")
-            {
-                return "no duplicates found";
-            }
 
-            return test;
+                return test.Trim();
+            }
+            catch
+            {
+                return "Crazy input!";
+            }
         }
     }
 }
