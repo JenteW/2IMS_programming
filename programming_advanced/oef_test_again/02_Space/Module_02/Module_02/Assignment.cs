@@ -37,6 +37,10 @@ namespace Module_02
                     temp[1] = temp[1].Replace(',', ' ');
                     temp[1] = temp[1].Trim();
                     number.Add(Convert.ToInt32(temp[1]));
+                    if (!temp[3].Contains('"'))
+                    {
+                        return "Crazy input!";
+                    }
                     temp[3] = temp[3].Replace('"', ' ');
                     temp[3] = temp[3].Trim();
                     text.Add(temp[3]);

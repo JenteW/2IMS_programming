@@ -26,6 +26,21 @@ namespace Module_02
                     {
                         string temp = numbers[i];
                         string temp2 = numbers[j];
+
+                        try
+                        {
+                            int numcheck = Convert.ToInt32(temp);
+                            if (numcheck < 0)
+                            {
+                                return "Crazy input!";
+                            }
+                            numcheck = Convert.ToInt32(temp2);
+                            
+                        }
+                        catch
+                        {
+                            return "Crazy input!";
+                        }
                         if (Convert.ToInt32(temp[0]) > Convert.ToInt32(temp2[0]))
                         {
                             string move = numbers[j];

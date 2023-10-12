@@ -93,6 +93,7 @@ namespace Where_is_Wally
             }
             return names;
         }
+        /*GNOME SORT*/
         public string[] GnomeSort(string[] names)
         {
             int len = names.Length;
