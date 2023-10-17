@@ -1,0 +1,22 @@
+steps to perform
+
+0. load in the data and meaningful libraries (pandas, numpy,...)
+1. Choose input/output varuables & perform EDA --> check dataframe, plot some histograms
+2. deal with outliers or skewed datasets (visualize using scatterplots, histograms & boxplots) (mayhaps use x = log x)
+	--> the most 'interesting' comparisson : An input Variable on the x-axis, the Output Variable on the y-axis.
+2b. optional: either use pandas.getdummies() here for transforming catergorical data to one hot encoding, or perform one hot encoding in step 5, using sklearn.onehotencoder
+3. perform feature selection/dimensionality reduction
+4. Test-train-split
+5. use one-hot encoding (onehotencoder or pd.getDummies(), = categorical to numerical columns); imputers (fill in missing data) ; scalers
+
+***begin machine learning***
+
+6.create an 'empty' model object and parameter grid for that model
+7. Create a GridSearchCV object, using the model and parameter grid. chose the best 'scoring' parameter for your usecase
+	--> (Regression f.e. RMSE, Classification: F1 or AUC)
+8. Fit the Gridmodel
+9.Ask for the best possible model, use that model to make a prediction on the test set and do some Performance Evaluation
+	(regression: print the MAE, RMSE, etc. in comparrison with the mean of the column)
+	(classification print the confusion matrix (use sns.hetmap()), print the f1 score and/or plot the ROC or PR curve)
+10. Do steps 6-9 for another type of model (f.e. LogisticRegression & RandomForestClassifier; kNNRegressor & RandomForestRegressor; etc)
+	Based on every models step 9 --> Chose the one with the best result (f.e. lowest RMSE (regression) or highest f1/AUC (Classification)
