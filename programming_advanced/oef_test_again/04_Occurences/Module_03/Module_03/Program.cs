@@ -48,10 +48,12 @@ namespace Module_03
             {
                 Assignment assignment = new Assignment();
                 string input = Console.ReadLine();
-                char num = Convert.ToChar(input);
+                int num = int.Parse(input);
                 string line = Console.ReadLine();
+                string[] split = line.Split(' ');
 
-                Console.WriteLine(assignment.Occurence(num, line));
+
+                Console.WriteLine(assignment.Occurence(num, split));
 
             }
             catch

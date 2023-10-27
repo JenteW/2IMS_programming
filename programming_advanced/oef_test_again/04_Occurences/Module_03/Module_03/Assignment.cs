@@ -8,23 +8,24 @@ namespace Module_03
 {
     internal class Assignment
     {
-        public int Occurence(char number, string line)
+        public int Occurence(int number, string[] line)
         {
-            if (line.Length < 2 && number == line[0])
+            int num = int.Parse(line[0]);
+            if (line.Length < 2 && number ==  num)
             {
                 return 1;
             }
-            else if(line.Length <2 && number != line[0])
+            else if(line.Length <2 && number !=  num)
             {
                 return 0;
             }
-            if(number == line[0])
+            if(number == num)
             {
-                return Occurence(number, line.Substring(1)) + 1;
+                return Occurence(number, line.Skip(1).ToArray()) + 1;
             }
             else
             {
-                return Occurence(number, line.Substring(1));
+                return Occurence(number, line.Skip(1).ToArray());
             }
         }
     }
