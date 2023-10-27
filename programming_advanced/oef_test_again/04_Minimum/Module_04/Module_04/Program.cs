@@ -1,4 +1,10 @@
-﻿namespace Module_04
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Module_04
 {
     internal class Program
     {
@@ -33,7 +39,20 @@
         The following content is*/
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            try
+            {
+                Assignment assignment = new Assignment();
+                string input = Console.ReadLine();
+                string[] split = input.Split(' ');
+                int min = int.Parse(split[0]);
+
+                Console.WriteLine(assignment.Minimum(split, min));
+
+            }
+            catch
+            {
+                Console.WriteLine("Crazy input!");
+            }
         }
     }
 }

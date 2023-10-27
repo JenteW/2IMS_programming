@@ -9,13 +9,25 @@ namespace Module_03
 {
     internal class Assignment
     {
-        public string Sum(string input)
+        public int Sum(string input)
         {
-            if(input.Length == 1)
+
+            if (string.IsNullOrEmpty(input))
             {
-                return input;
+                return 0;
             }
-            if()
+
+            if (char.IsDigit(input[0]))
+            {
+                int digit = (int)char.GetNumericValue(input[0]);
+
+                return digit + Sum(input.Substring(1));
+            }
+
+            else
+            {
+                return Sum(input.Substring(1));
+            }
 
         }
     }
