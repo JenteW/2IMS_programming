@@ -1,0 +1,15 @@
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.csproj.AssemblyReference.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.AssemblyInfo.cs
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\bin\Debug\net6.0\testing.exe
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\bin\Debug\net6.0\testing.deps.json
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\bin\Debug\net6.0\testing.runtimeconfig.json
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\bin\Debug\net6.0\testing.dll
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\bin\Debug\net6.0\testing.pdb
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.dll
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\refint\testing.dll
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.pdb
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\testing.genruntimeconfig.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\oef_test_again\random_shit_testing\testing\obj\Debug\net6.0\ref\testing.dll

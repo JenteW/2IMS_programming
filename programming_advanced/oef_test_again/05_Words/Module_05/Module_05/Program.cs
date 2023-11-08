@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.Tracing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
 namespace Module_05
 {
     internal class Program
@@ -7,7 +14,7 @@ namespace Module_05
         {
             try
             {
-                string input = Console.ReadLine();
+                string input = Console.ReadLine().ToLower();
                 string input2 = input;
                   
                 Assignment assignment = new Assignment();
@@ -15,13 +22,12 @@ namespace Module_05
 
                 assignment.Backtrack(input, input2);
                 assignment.SearchWords(words);
-                Console.WriteLine(assignment.ToString());
+                Console.WriteLine(assignment.ToString().Trim());
             }
             catch
             {
                 Console.WriteLine("Crazy input!");
             }
-           
 
         }
     }
