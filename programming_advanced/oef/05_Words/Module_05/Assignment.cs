@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Tracing;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml;
 
 namespace Module_05
 {
@@ -22,7 +19,7 @@ namespace Module_05
         {
             return words.Contains(input);
         }
-        public  void Backtrack(string word, string current)
+        public void Backtrack(string word, string current)
         {
             if (word.Length == 0)
             {
@@ -66,5 +63,6 @@ namespace Module_05
             }
             return result;
         }
+
     }
 }
