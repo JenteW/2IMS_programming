@@ -1,0 +1,88 @@
+/***** STEPS TO PERFORM ****/
+
+
+0. Load in the data and meaningful libraries (pandas, numpy, matplotlib, seaborn)
+1. Chose Input/Output variables & Perform EDA -> f.e. Dataframe operations ; Plot some histograms ; etc.
+2. Deal with outliers or skewed datasets (Visualize using scatterplots, histograms & boxplots) -
+	> The most 'interesting' comparissons: An Input Variable on the x-axis, The Ouput Variable on the y-axis.
+2b. OPTIONAL: Either use Pandas.getDummies() here for transforming catergorical data to one-hot encoding, or perform One-hot encoding in step 5, using Sklearn.OneHotEncoder
+3. Perform Feature Selection / Dimensionality reduction
+4. Test-train-split
+5. Use One-HotEcoding (OneHotEncoder or pd.getDummies(), = Categorical to numerical columns) ; Imputers (Fill in Missing Data) ; Scalers 
+	-> fit_transform() on training set ; transform() on test set to avoid DATA LEAKAGE
+6. Create an 'empty' model object and parameter grid for that model
+7. Create a GridSearchCV object, using the model and parameter grid. Chose the best 'scoring' parameter for your usecase 
+	->(Regression f.e. RMSE, Classification: f.e. F1 or AUC)
+8. Fit the Gridmodel
+9. Ask for the best possible model, use that model to make a prediction on the test set and do some Performance Evaluation 
+	(Regression: print the MAE, RMSE, etc. in comparrison with the mean of the column)
+	(Classification: print the confusion matrix (use sns.heatmap()), print the f1 score and/or plot the ROC or PR curve)
+10. Do steps 6-9 for another type of model (f.e. LogisticRegression & RandomForestClassifier ; kNNRegressor & RandomForestRegressor ; etc.)
+	Based on every models step 9 -> Chose the one with the best result (f.e. lowest RMSE (Regression) or highest f1 / AUC (Classification)
+
+---------------------------------------------------------------------------------------------------
+/***** REGRRESSION DATASET ****/
+
+Concrete Compressive Strength Data Set:
+Given are the variable name, variable type, the measurement unit and a brief description. The concrete compressive strength is the regression problem. The order of this listing corresponds to the order of numerals along the rows of the database.
+
+Name -- Data Type -- Measurement -- Description
+
+Cement (component 1) -- quantitative -- kg in a m3 mixture -- Input Variable
+Blast Furnace Slag (component 2) -- quantitative -- kg in a m3 mixture -- Input Variable
+Fly Ash (component 3) -- quantitative -- kg in a m3 mixture -- Input Variable
+Water (component 4) -- quantitative -- kg in a m3 mixture -- Input Variable
+Superplasticizer (component 5) -- quantitative -- kg in a m3 mixture -- Input Variable
+Coarse Aggregate (component 6) -- quantitative -- kg in a m3 mixture -- Input Variable
+Fine Aggregate (component 7) -- quantitative -- kg in a m3 mixture -- Input Variable
+Age -- quantitative -- Day (1~365) -- Input Variable
+Concrete compressive strength -- quantitative -- MPa -- Output Variable
+
+--------------------------------------------------------------------------------------------------------
+/***** BINARY CLASSIFICATION ****/
+
+
+ID : index
+gender -- Input Variable
+age : 5-years gap -- Input Variable
+height(cm) -- Input Variable
+weight(kg) -- Input Variable
+waist(cm) : Waist circumference length -- Input Variable
+eyesight(left) -- Input Variable
+eyesight(right) -- Input Variable
+hearing(left) -- Input Variable
+hearing(right) -- Input Variable
+systolic : Blood pressure -- Input Variable
+relaxation : Blood pressure -- Input Variable
+fasting blood sugar -- Input Variable
+Cholesterol : total -- Input Variable
+triglyceride -- Input Variable
+HDL : cholesterol type -- Input Variable
+LDL : cholesterol type -- Input Variable
+hemoglobin -- Input Variable
+Urine protein -- Input Variable
+serum creatinine -- Input Variable
+AST : glutamic oxaloacetic transaminase type -- Input Variable
+ALT : glutamic oxaloacetic transaminase type -- Input Variable
+Gtp : γ-GTP -- Input Variable
+oral : Oral Examination status -- Input Variable
+dental caries -- Input Variable
+tartar : tartar status -- Input Variable
+smoking -- Ouput Variable
+
+----------------------------------------------------------------------------------
+/***** MULTI-CLASS CLASSIFICATION ****/
+
+This is data that confirmed the grade of performance with age and some exercise performance data.
+age : 20 ~64 -- Input Variable
+gender : F,M -- Input Variable
+height_cm : -- Input Variable
+weight_kg -- Input Variable
+body fat_% -- Input Variable
+diastolic : diastolic blood pressure (min) -- Input Variable
+systolic : systolic blood pressure (min) -- Input Variable
+gripForce -- Input Variable
+sit and bend forward_cm -- Input Variable
+sit-ups counts -- Input Variable
+broad jump_cm -- Input Variable
+class : A,B,C,D ---- Ouput Variable
