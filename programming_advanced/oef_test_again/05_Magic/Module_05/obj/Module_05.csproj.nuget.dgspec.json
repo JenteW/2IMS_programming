@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj": {}
+    "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj": {
+    "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj",
+        "projectUniqueName": "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj",
         "projectName": "Module_05",
-        "projectPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj",
-        "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\obj\\",
+        "projectPath": "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\Module_05.csproj",
+        "packagesPath": "C:\\Users\\miste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miste\\OneDrive - Thomas More\\school_work\\2_IMS\\2IMS_programming\\programming_advanced\\oef_test_again\\05_Magic\\Module_05\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miste\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

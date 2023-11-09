@@ -52,9 +52,11 @@ namespace Module_05
                 {
                     return false;
                 }
-                }
 
             }
+            return true;
+        }
+
         public override string ToString()//prints magic square
         {
 
