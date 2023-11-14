@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week06\\devide_and_conquer\\devide_and_conquer\\devide_and_conquer.csproj",
-      "projectName": "devide_and_conquer",
-      "projectPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week06\\devide_and_conquer\\devide_and_conquer\\devide_and_conquer.csproj",
+      "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\06_Names\\Module_06\\Module_06.csproj",
+      "projectName": "Module_06",
+      "projectPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\06_Names\\Module_06\\Module_06.csproj",
       "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week06\\devide_and_conquer\\devide_and_conquer\\obj\\",
+      "outputPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\06_Names\\Module_06\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
