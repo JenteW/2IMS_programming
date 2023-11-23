@@ -14,8 +14,8 @@ namespace Module_07
         {
             result += " ";
             string binary = Convert.ToString(input, 2);
-            Console.WriteLine(binary);
-            Console.WriteLine();
+           /* Console.WriteLine(binary);
+            Console.WriteLine();*/
             if(binary == "0")
             {
                 return result;
@@ -25,7 +25,7 @@ namespace Module_07
                 if (binary[i] == '1')
                 {
                     result += $"{alphabet[i]}";
-                    Console.Write(alphabet[i]);
+                    //Console.Write(alphabet[i]);
                 }
             }
             return BinaryAlpha(input - 1);
@@ -44,7 +44,7 @@ namespace Module_07
             return output;
         }
 
-        public string Memoisation(int n, string[] array)
+       /* public string Memoisation(int n, string[] array)
         {
             Console.Write("Call" + n + "  ");
             if (n > 26) throw new Exception("Crazy input");
@@ -65,7 +65,7 @@ namespace Module_07
             }
             array[n] = Memoisation(n-1, array);
             return array[n];
-        }
+        }*/
 
 
 

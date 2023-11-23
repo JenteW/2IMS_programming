@@ -1,4 +1,9 @@
-﻿namespace Module_07
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Module_07
 {
     internal class Program
     {/*06 Binary alphabet
@@ -31,15 +36,23 @@
         a a ab a ac ab abc a ad ac acd ab abd abc abcd a ae ad ade ac */
         static void Main(string[] args)
         {
-            Assignment assignment = new Assignment();
-            string input = "8";//Console.ReadLine();
-            int number = int.Parse(input);
-            string output = assignment.BinaryAlpha(number);
-            Console.WriteLine("output == " +output);
-            Console.WriteLine();
-            Console.WriteLine("result == "+assignment.result);
-            Console.WriteLine("Memo" + assignment.Memoisation(number, new string[number+1]));
-            Console.WriteLine(assignment.flip());
+            try
+            {
+                Assignment assignment = new Assignment();
+                string input = Console.ReadLine();
+                int number = int.Parse(input);
+                if(number > 26) throw new Exception("Crazy input!");
+                string output = assignment.BinaryAlpha(number);
+                //Console.WriteLine("output == " + output);
+                //Console.WriteLine();
+                //Console.WriteLine("result == " + assignment.result);
+                //Console.WriteLine("Memo" + assignment.Memoisation(number, new string[number + 1]));
+                Console.WriteLine(assignment.flip().Trim());
+            }
+            catch
+            {
+                  Console.WriteLine("Crazy input!");
+            }
         }
     }
 }
