@@ -1,0 +1,5 @@
+post-order voor iets te verwijderen
+
+in-order voor ble
+
+pre-order

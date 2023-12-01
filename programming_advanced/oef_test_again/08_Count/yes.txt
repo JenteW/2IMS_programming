@@ -1,0 +1,40 @@
+Implement a Depth-First Search (DFS) algorithm to determine the number of connected components in a graph.
+
+Input/Output
+Input
+5 --> nr of nodes
+3 --> nr of edges
+0 1
+2 3
+3 4
+output
+2
+explanation
+There are two connected components in this graph: one containing nodes 0 and 1, and the other containing nodes 2, 3, and 4.
+
+ 
+
+Input
+4 --> nr of nodes
+1 --> nr of edges
+0 2
+output
+3
+explanation
+There are three connected components in this graph: one containing nodes 0 and 2, and two single-node components containing nodes 1 and 3.
+
+
+CodeGrade Setup = .Net framework 6.0
+
+Code instructions
+
+To solve this assignment you need to create a Module_08 namespace with a class and a method
+
+namespace Module_08
+{
+  public class ...
+  {
+    public ... ... (...)
+    {}
+  }
+}
