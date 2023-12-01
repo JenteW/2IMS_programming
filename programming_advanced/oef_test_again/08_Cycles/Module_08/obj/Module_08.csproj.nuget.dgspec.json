@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week08\\Graphs\\Graphs.csproj": {}
+    "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\08_Cycles\\Module_08\\Module_08.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week08\\Graphs\\Graphs.csproj": {
+    "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\08_Cycles\\Module_08\\Module_08.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week08\\Graphs\\Graphs.csproj",
-        "projectName": "Graphs",
-        "projectPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week08\\Graphs\\Graphs.csproj",
+        "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\08_Cycles\\Module_08\\Module_08.csproj",
+        "projectName": "Module_08",
+        "projectPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\08_Cycles\\Module_08\\Module_08.csproj",
         "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\week08\\Graphs\\obj\\",
+        "outputPath": "C:\\Users\\Gebruiker\\Documents\\2IMS_programming\\programming_advanced\\oef_test_again\\08_Cycles\\Module_08\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
