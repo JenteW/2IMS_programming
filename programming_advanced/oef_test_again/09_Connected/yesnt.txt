@@ -1,0 +1,28 @@
+Check if a weighted graph is connected or not. A graph is considered connected if there is a path between every pair of nodes.
+
+ 
+
+Input/Output
+
+Input
+5 --> nr of nodes
+3 --> nr of edges
+0,1,8 --> node 1, node 2, weight
+2,3,6
+3,4,9
+output
+not connected
+explanation
+There is no connection between 1 and 2
+
+ 
+
+Input
+3 --> nr of nodes
+2 --> nr of edges
+0,1,8
+1,2,9
+output
+connected
+explanation
+All nodes are connected, we can travel from node 0 to node 2
