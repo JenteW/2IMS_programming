@@ -30,17 +30,17 @@ namespace Module_09
     internal class Assignment
     {
         private int nodes;
-        List<int>[] graph;
+        List<(int, int)>[] graph;
         public int startnode;
         private int edges;       
 
         public Assignment(int nodes)
         {
             this.nodes = nodes;
-            graph = new List<int>[nodes];
+            graph = new List<(int, int)>[nodes];
             for (int i = 0; i < nodes; i++)
             {
-                graph[i] = new List<int>();
+                graph[i] = new List<(int, int)>();
             }
             this.startnode = -1;
         }
@@ -56,7 +56,8 @@ namespace Module_09
                 string[] inputArray = input.Split(',');
                 int source = Convert.ToInt32(inputArray[0]);
                 int destination = Convert.ToInt32(inputArray[1]);
-                graph[source].Add(destination);
+                int weight = Convert.ToInt32(inputArray[2]);
+                graph[source].Add((destination, weight));
                 if (startnode == -1)
                 {
                     startnode = source;
