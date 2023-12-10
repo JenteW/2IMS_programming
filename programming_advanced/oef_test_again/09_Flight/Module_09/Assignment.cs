@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 using System.IO;
 using System.Xml.Schema;
 
@@ -73,23 +72,19 @@ namespace Module_09
 
         public int GetCity(string city)
         {
-            int cityIndex = -1;
-            foreach (List<(string, int)> item in cityList)
+            for (int i = 0; i < cityList.Length; i++)
             {
-                foreach ((string cityName, int index) in item)
+                var item = cityList[i];
+                for (int j = 0; j < item.Count; j++)
                 {
-                    if (cityName == city)
+                    var tuple = item[j];
+                    if (tuple.Item1 == city)
                     {
-                        cityIndex = index;
-                        break;
+                        return tuple.Item2;
                     }
                 }
-                if (cityIndex != -1)
-                {
-                    break;
-                }
             }
-            return cityIndex;
+            return -1;
         }
         public int Dijkstra(int startnode)
         {
@@ -115,8 +110,11 @@ namespace Module_09
 
                 visited.Add(node);
 
-                foreach ((string neighbour, int weight) in graph[node])
+                foreach (var tuple in graph[node])
                 {
+                    string neighbour = tuple.Item1;
+                    int weight = tuple.Item2;
+
                     int cost = distances[node] + weight;
 
                     if (cost < distances[GetCity(neighbour)])
