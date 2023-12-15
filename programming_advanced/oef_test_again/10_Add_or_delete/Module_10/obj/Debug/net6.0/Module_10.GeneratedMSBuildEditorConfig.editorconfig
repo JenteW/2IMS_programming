@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Trees
-build_property.ProjectDir = C:\Users\miste\OneDrive - Thomas More\school_work\2_IMS\2IMS_programming\programming_advanced\week10\Trees\
+build_property.RootNamespace = Module_10
+build_property.ProjectDir = C:\Users\miste\OneDrive - Thomas More\school_work\2_IMS\2IMS_programming\programming_advanced\oef_test_again\10_Add_or_delete\Module_10\
