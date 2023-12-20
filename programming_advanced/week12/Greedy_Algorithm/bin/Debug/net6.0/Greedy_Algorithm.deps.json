@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Greedy_Algorithm/1.0.0": {
+        "runtime": {
+          "Greedy_Algorithm.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Greedy_Algorithm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
