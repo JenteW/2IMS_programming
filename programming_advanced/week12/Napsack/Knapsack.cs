@@ -1,4 +1,6 @@
-﻿namespace Napsack
+﻿using System.Linq.Expressions;
+
+namespace Napsack
 {
 
 
@@ -30,12 +32,40 @@
             }
             return value;
         }
-        public int BruteForce(int weight)
+   
+        public int BruteForce()
         {
-            foreach (Item item in Items)
+            int max = 0;
+            int value = 0;
+            int weight = 0;
+            for (int i = 0; i < Items.Count; i++)
             {
-
+                weight += Items[i].Weight;
+                value += Items[i].Value;
+                for (int j = i; j < Items.Count; j++)
+                {
+                    if (weight < Maxweight)
+                    {
+                        weight += Items[j].Weight;
+                        if(weight <= Maxweight)
+                        {
+                            value += Items[j].Value;
+                        }
+                        else
+                        {
+                            weight -= Items[j].Weight;
+                        }
+                    }
+                }
+                if (max < value)
+                {
+                    max = value;
+                }
+                value = 0;
+                weight = 0;
+                
             }
+            return max;
         }
         public override string ToString()
         {

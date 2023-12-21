@@ -16,7 +16,8 @@
             Console.WriteLine(sack);
             sack.Items.Sort();
             Console.WriteLine(sack);
-            Console.WriteLine(sack.Greedy());
+            Console.WriteLine("Greedy "+ sack.Greedy());
+            Console.WriteLine("Brute Force " + sack.BruteForce());
             //and now solve the problem!!
         }
     }

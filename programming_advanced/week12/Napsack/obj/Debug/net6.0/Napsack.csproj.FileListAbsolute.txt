@@ -12,3 +12,18 @@ C:\Users\miste\OneDrive - Thomas More\school_work\2_IMS\2IMS_programming\program
 C:\Users\miste\OneDrive - Thomas More\school_work\2_IMS\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.pdb
 C:\Users\miste\OneDrive - Thomas More\school_work\2_IMS\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.genruntimeconfig.cache
 C:\Users\miste\OneDrive - Thomas More\school_work\2_IMS\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\ref\Napsack.dll
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\bin\Debug\net6.0\Napsack.exe
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\bin\Debug\net6.0\Napsack.deps.json
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\bin\Debug\net6.0\Napsack.runtimeconfig.json
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\bin\Debug\net6.0\Napsack.dll
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\bin\Debug\net6.0\Napsack.pdb
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.csproj.AssemblyReference.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.AssemblyInfo.cs
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.dll
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\refint\Napsack.dll
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.pdb
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\Napsack.genruntimeconfig.cache
+C:\Users\Gebruiker\Documents\2IMS_programming\programming_advanced\week12\Napsack\obj\Debug\net6.0\ref\Napsack.dll
